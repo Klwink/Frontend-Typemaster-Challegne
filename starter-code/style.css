@@ -1,0 +1,229 @@
+/*
+COLORS:
+#f16818
+#ff9b63
+#162542
+#7b8bad
+#e8eff2
+#fff
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-orange-dark: #f16818;
+  --color-orange-light: #ff9b63;
+  --color-blue-dark: #162542;
+  --color-blue-light: #7b8bad;
+  --color-gray-light: #e8eff2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* .wrapper {
+  display: block;
+} */
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--color-blue-light);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5.5rem 15rem;
+  align-items: center;
+}
+
+.btn {
+  font-family: "Barlow";
+  font-weight: 700;
+  border: none;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  display: inline-block;
+  background-color: var(--color-gray-light);
+  padding: 2rem;
+}
+
+.header-btn:hover {
+  background-color: var(--color-blue-dark);
+  color: #fff;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 16.5rem;
+}
+
+.top-left {
+  margin-right: 12rem;
+}
+
+.top-header {
+  font-family: "Barlow";
+  font-weight: 900;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  margin-bottom: 2.4rem;
+}
+
+.hero-text {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.hero-footer {
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn {
+  background-color: var(--color-orange-dark);
+  color: #fff;
+  border-radius: 0.8rem;
+}
+
+.hero-btn:hover {
+  background-color: var(--color-orange-light);
+}
+
+.release {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--color-blue-light);
+  margin-left: 20px;
+}
+
+.top-right {
+  width: 54rem;
+  height: 48rem;
+  background-image: url(/starter-code/assets/desktop/image-keyboard.jpg);
+  position: relative;
+  background-size: cover;
+  border-radius: 0.8rem;
+}
+
+.top-right::after {
+  content: url(assets/shared/pattern-square.svg);
+  position: absolute;
+
+  width: 25.5rem;
+  height: 24rem;
+  right: -30rem;
+}
+
+.low-con {
+  display: flex;
+  margin: 0 16.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.low-con-text-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12.5rem;
+}
+
+.low-con::before {
+  content: " ";
+  position: absolute;
+  background-image: url(assets/shared/pattern-square.svg);
+  width: 25.5rem;
+  height: 24rem;
+  left: -30rem;
+  margin-top: 23rem;
+}
+
+.intro-images {
+  display: flex;
+}
+
+.intro-image-left {
+  width: 25.5rem;
+  height: 48rem;
+  border-radius: 0.8rem;
+  margin-right: 3rem;
+  background-image: url(/starter-code/assets/desktop/image-phone-and-keyboard.jpg);
+  background-color: var(--color-orange-dark);
+  background-repeat: no-repeat;
+
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.intro-image-right {
+  background-image: url(/starter-code/assets/desktop/image-glass-and-keyboard.jpg);
+  width: 44.5rem;
+  height: 48rem;
+  background-size: cover;
+  border-radius: 0.8rem;
+}
+
+.low-con-header {
+  color: var(--color-blue-dark);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  margin-bottom: 2.7rem;
+}
+
+.features-box {
+  margin: 19.3rem 16.5rem 12.8rem 16.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-icon {
+  height: 6.5rem;
+  width: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-orange-dark);
+  border-radius: 1.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.feature-header {
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: var(--color-blue-dark);
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.feature:not(:last-child) {
+  margin-right: 4.5rem;
+}
+
+.footer {
+  color: var(--color-blue-light);
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 3.9rem;
+}
+
+.footer span {
+  font-weight: 500;
+}
